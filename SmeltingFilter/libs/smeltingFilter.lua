@@ -1,4 +1,4 @@
-config = {
+Config = {
     invDefs = {
         ["junk"] = "back",
         ["ores"] = "front",
@@ -55,7 +55,7 @@ config = {
         }
     }
 }
-function moveItems( configTable, extraToJunk ) 
+function MoveItems( configTable, extraToJunk ) 
     local from_wrap = peripheral.wrap(configTable.invDefs.from)
     redstone.setOutput(configTable.invDefs.rOut, true)
     local item_list = from_wrap.list()
