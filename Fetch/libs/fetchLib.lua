@@ -18,7 +18,7 @@ function IsChest(peripheralName)
         result = true
     end,
     function(e)
-        print(e .. " | not a chest")
+        --print(e .. " | not a chest")
 --        sleep(2)
         result = false
     end)
